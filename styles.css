@@ -1,0 +1,148 @@
+/* General */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #1d295e, #764ba2);
+  color: #333;
+  min-height: 100vh;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+header {
+  background: #b0aae0;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  background: #f8f8f8;
+}
+.tab {
+  flex: 1;
+  padding: 18px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab.active {
+  background: #9f56ff;
+  color: white;
+}
+.content {
+  padding: 40px;
+  display: none;
+}
+.content.active {
+  display: block;
+}
+
+/*USD to INR Styles */
+.currency-container {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+.currency-container input {
+  padding: 12px;
+  margin: 10px;
+  font-size: 22px;
+  border: 2px solid #9f56ff;
+  border-radius: 5px;
+  outline: none;
+  width: 220px;
+  text-align: center;
+}
+.currency-container button {
+  padding: 12px 25px;
+  font-size: 22px;
+  background: #9f56ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.currency-container button:hover {
+  background: #c2185b;
+}
+.currency-container h3 {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9f56ff;
+}
+
+/*Weather Styles*/
+.weather-container {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  border-radius: 15px;
+  animation: fadeInContainer 1s ease-in forwards;
+}
+.weather-container input,
+.weather-container button {
+  padding: 15px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  margin: 10px 0;
+  outline: none;
+}
+.weather-container input {
+  width: 85%;
+  border: 1px solid #ddd;
+}
+.weather-container button {
+  width: 50%;
+  background: linear-gradient(135deg, #9f56ff, #7a4bff);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.weather-container button:hover {
+  background: linear-gradient(135deg, #7a4bff, #9f56ff);
+}
+#weatherResult {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+.weather-icon {
+  width: 120px;
+  margin-top: 15px;
+  animation: bounceIcon 2s infinite;
+}
+@keyframes bounceIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes fadeInContainer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
