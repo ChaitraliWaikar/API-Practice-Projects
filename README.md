@@ -2,9 +2,9 @@
 
 A clean, responsive single-page web app containing two API-based tools:
 
-- * USD → INR Live Currency Converter
+-  USD → INR Live Currency Converter
 
-- * Real-time Weather App (any city worldwide)
+-  Real-time Weather App (any city worldwide)
 
 Both tools run inside a single HTML page, making this perfect for portfolios and beginner API projects.
 
