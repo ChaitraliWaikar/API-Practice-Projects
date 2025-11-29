@@ -48,5 +48,5 @@ Feature	Description
 
 ```bash
 git clone https://chaitraliwaikar.github.io/API-Practice-Projects/
-cd your-repo-name
+cd API-Practice-Projects
 open index.html
