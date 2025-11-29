@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Mini Projects</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            margin: 50px; 
-            background: linear-gradient(135deg, #667eea, #764ba2); 
-            color: white; 
-        }
-        .project { 
-            display: inline-block; 
-            margin: 20px; 
-            padding: 20px; 
-            background: rgba(255,255,255,0.1); 
-            border-radius: 10px; 
-            text-decoration: none; 
-            color: white; 
-            transition: transform 0.3s; 
-        }
-        .project:hover { transform: scale(1.05); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My API Projects – Currency & Weather</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Click below to try them out!</p>
-    
-    <a href="https://github.com/ChaitraliWaikar/API-Practice-Projects/usd-to-inr-converter/" class="project">
+
+  <div class="container">
+    <header>
+      <h1>USD → INR Converter + Weather App </h1>
+    </header>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab(event, 'currency')">USD → INR Converter</div>
+      <div class="tab" onclick="switchTab(event, 'weather')">Weather App</div>
+    </div>
+
+    <!-- Currency Tab -->
+    <div id="currency" class="content active">
+      <div class="currency-container">
         <h2>USD to INR Converter</h2>
-        <p>Live currency conversion with API magic.</p>
-    </a>
-    
-    <a href="https://github.com/ChaitraliWaikar/API-Practice-Projects/Weather-App/" class="project">
-        <h2>Weather App</h2>
-        <p>Check weather for any city instantly.</p>
-    </a>
-    
+        <input type="number" id="usdAmount" placeholder="Enter USD Amount" min="0">
+        <button onclick="convertNow()">Convert</button>
+        <h3 id="result">Result will appear here</h3>
+      </div>
+    </div>
+
+    <!-- Weather Tab -->
+    <div id="weather" class="content">
+      <div class="weather-container">
+        <h1 style="color:white;">Weather App</h1>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button onclick="getWeatherNow()">Get Weather</button>
+        <div id="weatherResult"></div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
