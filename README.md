@@ -8,7 +8,7 @@ A clean, responsive single-page web app containing two API-based tools:
 
 Both tools run inside a single HTML page, making this perfect for portfolios and beginner API projects.
 
-## 🔗 Live Demo: 
+## 🔗 Live Demo: https://chaitraliwaikar.github.io/API-Practice-Projects/
 
 ### Features
 Feature	Description
