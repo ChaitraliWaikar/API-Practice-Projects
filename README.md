@@ -47,6 +47,6 @@ Feature	Description
 3. That’s it — no server needed!
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://chaitraliwaikar.github.io/API-Practice-Projects/
 cd your-repo-name
 open index.html
